@@ -3,8 +3,13 @@
 
 int main()
 {
-  int l,c;
+  int l,c, num;
   scanf("%d %d", &l, &c);
+  if(l == 0 || c == 0)
+  {
+    printf("[matriz vazia]");
+    return 1;
+  }
   int **p =(int**)malloc(sizeof(int*)*l);
 
   for(int i = 0; i < l; i++)
@@ -23,6 +28,6 @@ int main()
     free(p[i]);
   
   free(p);
-
+  
   return 0;
 }
