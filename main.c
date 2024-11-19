@@ -22,7 +22,7 @@ int main()
       scanf("%d", &p[i][j]);
       printf("%d", p[i][j]);
       if(j < c - 1)
-        printf("\n");
+        printf(" ");
     }
     printf("\n");
   }
