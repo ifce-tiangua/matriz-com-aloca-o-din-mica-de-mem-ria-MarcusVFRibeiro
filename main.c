@@ -3,7 +3,7 @@
 
 int main()
 {
-  int l,c, num;
+  int l,c;
   scanf("%d %d", &l, &c);
   if(l == 0 || c == 0)
   {
@@ -20,14 +20,16 @@ int main()
     for(int j = 0; j < c; j++)
     {
       scanf("%d", &p[i][j]);
-      printf("%d ", p[i][j]);
+      printf("%d", p[i][j]);
+      if(j < c - 1)
+        printf("\n");
     }
     printf("\n");
   }
   for(int i = 0; i < l; i++)
     free(p[i]);
-  
+
   free(p);
-  
+
   return 0;
 }
